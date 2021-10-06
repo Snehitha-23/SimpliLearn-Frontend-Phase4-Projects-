@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transform demo</title>
+<style>
+    div {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+  /* translate based on params given x and y */
+  transform: translate(50px,100px);
+}
+    #myDiv{
+        transform: rotateZ(90deg);
+    }
+    #myDiv1 {
+ 
+  transform: skewX(20deg);
+  /* box shadow gives shadow  */
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+/* @keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+} */
+body{
+  
+    background-image: linear-gradient(red,yellow);
+
+}
+</style>
+
+</head>
+<body>
+  <div>
+      This is div tag
+  </div> 
+  <br/>
+  <br/> 
+  <div id="myDiv">
+      This is div tag rotated along Z-axis 
+  </div>
+  <div>
+    This is div tag rotated with 2D using translate
+</div>
+<div id="myDiv1">
+    This is 2D rotate with skew
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+p{
+    color: blueviolet;
+            }
+            #one{
+                border:2px solid brown;
+                height: 250px;
+                width:200px;
+            }
+            .myclass{
+                border:2px solid green;
+                height: 250px;
+                width:200px;
+            }
+            .fontclass{
+                color:hotpink;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: large;
+            }
+            body{
+                background-color:lightblue;
+            }
+            .testborder{
+                border-style: outset;
+                border-color:rebeccapurple;
+                background-image:  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fsm.mashable.com%2Ft%2Fmashable_me%2Fphoto%2Fdefault%2Fturner-36-s1-full-image-gallerybackground-en-us-155735629372_ux96.960.jpg&imgrefurl=https%3A%2F%2Fme.mashable.com%2Fculture%2F9984%2Ftom-and-jerry-creator-gene-deitch-passes-away-at-age-95&tbnid=431hKQqxC0uCrM&vet=12ahUKEwi4sv6EjbPrAhWMEbcAHX8FDGcQMygHegUIARDgAQ..i&docid=7ec6kvB9LWYLbM&w=959&h=540&q=tom%20and%20jerry&ved=2ahUKEwi4sv6EjbPrAhWMEbcAHX8FDGcQMygHegUIARDgAQ";
+                border-top-color:red;
+                border-radius: 5px;
+                border-width: 4px;
+            }
+            .testpadding{
+                padding: 50px 100px 50px 100px;
+                /* max width makes our page responsive */
+                max-width: 500px;
+            
+            }

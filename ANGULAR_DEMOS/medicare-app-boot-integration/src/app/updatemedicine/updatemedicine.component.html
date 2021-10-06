@@ -1,0 +1,9 @@
+<div class="container">
+    <h3><u>Enter Medicine Details Below to update in DB which already exists</u></h3>
+    <input class="form-control" type="text" [(ngModel)]="medicine.name" placeholder="Enter Medicine Name"/>
+    <input class="form-control" type="text" [(ngModel)]="medicine.price" placeholder="Enter Medicine Price"/>
+    <input class="form-control" type="text" [(ngModel)]="medicine.productDescription" placeholder="Enter Medicine Description"/>
+    <input class="form-control" type="text" [(ngModel)]="medicine.seller" placeholder="Enter Medicine Seller"/>
+    <button class="btn  btn-primary" type="button" (click)=updateMedicine()>Update Medicine</button>
+    </div>
+

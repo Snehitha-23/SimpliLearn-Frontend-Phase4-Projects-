@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays JS Demo</title>
+</head>
+<body>
+    <h1>Arrays Demmo......Please check console</h1>
+   <script>
+    let fruits=['Apple','Banana','Kiwi'];
+    console.log(fruits);
+    for(let i=0;i<fruits.length;i++){
+        console.log(fruits[i]);
+    }
+    let emp=new Array();
+    emp[0]='Abhi';
+    emp[1]='Raj';
+    console.log(emp);
+    let emp1=new Array('gowri','ganesha','shiva');
+    console.log(emp1);
+    // to combine two arrays-concat is used
+    let allEmp=emp.concat(emp1);
+    console.log(allEmp);
+
+let marks=[10,20,30,40,50,60,70];
+// callback...,filetr once to every element in array
+console.log(marks.filter(function(val){
+    return val>30;
+}));
+// filer all which satisfies the condition where find is only first occurrence
+console.log(marks.find(x=>x>30));
+console.log("foreach loop demo")
+marks.forEach(x=>{
+console.log(x);
+})
+console.log(marks.join());
+console.log(marks.join('-'));
+console.log(marks.reverse());
+console.log(marks.sort());
+marks.push(100);
+console.log(marks);
+
+marks.pop();
+console.log(marks);
+// splice is like subset
+console.log("demo on slice");
+console.log(marks.slice(2,4));
+console.log(marks.slice(2));
+console.log("demo on splice");
+// here starting from 1 index remove two elements and from where he would inesrt 10 and retuens deleted elements
+console.log(marks.splice(1,2,40));
+console.log(marks);
+// we can add any no of elements
+console.log(marks.splice(0,2,10,1000,3));
+console.log(marks);
+marks.sp
+</script>
+</body>
+</html>

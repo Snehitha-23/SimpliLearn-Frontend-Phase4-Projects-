@@ -1,0 +1,9 @@
+<div class="container">
+    <h3><u>Enter Medicine Details Below to add in DB</u></h3>
+    <input class="form-control" type="text" [(ngModel)]="medicine.name" placeholder="Enter Medicine Name"/>
+    <input class="form-control" type="text" [(ngModel)]="medicine.price" placeholder="Enter Medicine Price"/>
+    <input class="form-control" type="text" [(ngModel)]="medicine.productDescription" placeholder="Enter Medicine Description"/>
+    <input class="form-control" type="text" [(ngModel)]="medicine.seller" placeholder="Enter Medicine Seller"/>
+    <input class="form-control" type="url"  [(ngModel)]="medicine.avatar" placeholder="Enter Medicine's Image url"/>
+    <button class="btn  btn-primary" type="button" (click)=addMedicine()>Add Medicine</button>
+    </div>

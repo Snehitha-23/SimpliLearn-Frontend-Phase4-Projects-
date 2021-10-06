@@ -1,0 +1,20 @@
+<div class="row">
+   
+<div class="container" class="column" *ngFor="let medicine of medicinesList">
+    
+
+    <div class="card" style="width:400px">
+        <img class="card-img-top" [src]="medicine.avatar" alt="Card image" style="height:150px;width: 150px;">
+        <div class="card-body">
+          <h4 class="card-title">{{medicine.name}}</h4>
+          <p class="card-text">Mfr:{{medicine.seller}}</p>
+          <p class="card-text">Price:Rs{{medicine.price}}</p>
+          <!-- <a routerLink="/addToCart" class="btn btn-primary stretched-link">See More</a> -->
+         <button (click)=AddToCart(medicine)>Add To Cart</button>
+        </div>
+
+    </div>
+    </div>
+</div>
+
+

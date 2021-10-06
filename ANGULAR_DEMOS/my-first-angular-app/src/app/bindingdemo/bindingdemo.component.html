@@ -1,0 +1,24 @@
+<div>
+    <h1>Demo on Binnding the data...This info is rendered from binding component</h1>
+<h2>{{message}}</h2>
+<button type="button" (click)="sayHello()">Click for event binding</button>
+</div>
+
+<div>
+<h2>{{message}}</h2>
+<br/>
+<img alt="Jerry" style="width:250px;height: 250px;"[src]="url"/>
+<button type="button" (click)="sayHi()">Click for property binding</button>
+</div>
+
+<div>
+    Enter Player Id<input type="text"[(ngModel)]="player.id"><br/>
+    Enter Player Name<input type="text"[(ngModel)]="player.name"><br/>
+    Enter Player Image<input type="url"[(ngModel)]="player.avatar"><br/>
+</div>
+<div>
+    <h2>Player Data is</h2>
+    <span>ID: {{player.id}}</span><br/><br/>
+    <span>Name: {{player.name}}</span><br/><br/>
+    <span>Players Image<img alt="player's image" style="width:250px;height: 250px;"[src]="player.avatar"/></span>
+</div>

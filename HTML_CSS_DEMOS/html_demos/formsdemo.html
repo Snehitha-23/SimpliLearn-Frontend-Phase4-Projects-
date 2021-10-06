@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS DEMO</title>
+    <!-- form is like where input is taken from user...userdata with some feilds. -->
+</head>
+<body>
+    <!-- form will be only submitted with submit button -->
+   <!-- Use nonvalidate with form tag to remmove default validations -->
+    <form>
+       <table border="1px">
+           <tr>
+     <td>  <label>FirstName</label></td>
+    <td> <input type="text"/></td>
+    </tr>
+
+    <tr>
+        <td>  <label>Password</label></td>
+       <td> <input type="password" required="true"/></td>
+       </tr>
+<!-- when we use number if any alphbest enter and sumit it will not alllow same validation is also done for email -->
+       <tr>
+        <td>  <label>Contact Number</label></td>
+       <td> <input type="number"/></td>
+       </tr>
+
+       <tr>
+        <td>  <label>Email</label></td>
+       <td> <input type="email"/></td>
+       </tr>
+
+
+       <tr>
+        <td>  <label>DOB</label></td>
+       <td> <input type="date"/></td>
+       </tr>
+
+       <tr>
+        <td>  <label>Favourite Color</label></td>
+       <td> <input type="color"/></td>
+       </tr>
+<!-- If value both can be clicked if only one give as name -->
+       <tr>
+        <td>  <label>Gender</label></td>
+       <td> <input type="radio" name="Female"/>F &nbsp&nbsp&nbsp
+        <input type="radio" name="male"/>M</td>
+       </tr>
+
+       <tr>
+        <td>  <label>Country</label></td>
+       <td><select>
+            <option value="INDIA">INDIA</option>
+            <option value="Others">Others</option>
+       
+            </select>
+        </td>
+       </tr>
+
+
+       <tr>
+           <td><label>Hobbies</label></td>
+           <td><input type="checkbox" name="hobby"value="Cricket">Cricket
+           <input type="checkbox" name="hobby"value="Swiming">Swimming</td>
+        </tr>
+       
+<tr>
+    <td><label>Address</label></td>
+    <td><textarea placeholder="Enter address" rows="10" cols="10"></textarea></td>
+</tr>
+
+<tr>
+    <td><label>Login time</label></td>
+<td><input type="time"></td>
+</tr>
+
+<tr>
+    <td><label>Month</label></td>
+<td><input type="month"></td>
+</tr>
+
+
+<tr>
+    <td><label>Telephone</label></td>
+<td><input type="tel"></td>
+</tr>
+
+
+<tr>
+    <td><label>Range</label></td>
+<td><input type="range" min="1000" max="99999"></td>
+</tr>
+
+<tr>
+    <td><label>Give your linkedIn URL</label></td>
+<td><input type="url"></td>
+</tr>
+
+<tr>
+    <td><label>PAN number</label></td>
+<td><input type="text" required pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" title="Please enter a valid one"></td>
+</tr>
+
+
+    <tr>
+<td><input type="submit"value="SUBMIT"/></td>
+<!-- apart from submit another one is reset to change the values -->
+
+<td><input type="reset"value="RESET"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

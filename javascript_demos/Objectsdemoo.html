@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object demo</title>
+</head>
+<body>
+    <h1>Object demo please check out console</h1>
+    <script>
+        function testObjects(){
+            var player={
+                fname:"Sachinn",
+                lname:"Tendulakr",
+                age:40,
+                displayPlayer:function(){
+                    return this.fname+' '+this.lname+' '+this.age;
+                }
+            };
+            console.log(player.displayPlayer());
+        
+        for( p in player){
+console.log(player[p]);
+        }
+
+        let arr=Object.values(player);
+        console.log(arr);
+        console.log(JSON.stringify(player));
+
+function Customer(fname,lname,age)
+{
+    this.firstname=fname;
+    this.lastname=lname;
+    this.age=age;
+}
+
+let c1=new Customer('Ravi','Kumar',40);
+console.log(JSON.stringify(c1));
+Customer.prototype.country="INDIA";
+
+let c2=new Customer('Jay','Dev',42);
+console.log(JSON.stringify(c2));
+console.log(c2.country);
+
+let cArray=[c1,c2];
+cArray.push(new Customer('Sai','Ram',100));
+cArray.forEach(x=>{
+    console.log(JSON.stringify(x));
+});
+
+        }
+        testObjects();
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functiond Demo</title>
+</head>
+<body>
+    <script>
+    function sayHi(){
+        return "Hello Function";
+    }
+    console.log(sayHi());
+
+    function sayHi(x){
+        return "Hello Function"+x;
+    }
+    console.log(sayHi(1000));
+
+function add(){
+    let sum=0;
+    for(let i=0; i<arguments.length;i++){
+        sum+=arguments[i];
+    }
+    return sum;
+}
+console.log(add(1,2,3))
+// js engine first sees the function also after calling it
+showHoist();
+ function showHoist(){
+     console.log("function hoisting eg");
+ }
+
+ console.log("Demo on anonymous Functions")
+ let hi=function(){
+     console.log("hello anonymos");
+ }
+ hi();
+ console.log(typeof(hi));
+
+
+ (function(){
+     console.log("This is immediately invoked function execution(IIFE")
+ })();
+ let x=100;
+ let y=20;
+
+ (function(){
+     console.log("IIFE demo 2");
+     console.log(x+y);
+ })(x,y);
+
+// lambda there here it is arrow
+ console.log("Arrow functions demoo...........");
+let h=()=>console.log("Helloww arrow");
+h();
+
+let sum=(a,b,c)=>a+b+c;
+console.log(sum(12,12,12));
+
+console.log("JS Closures");
+//A closure is a function which preserves the outer scope in its inner scope
+function greet(){
+    let message="Helloooooooo";
+    function sayHello(){
+        console.log(message);
+    }
+    // we can also return function as it is also like a type in Js
+     return sayHello;
+}
+  let hey=greet();
+  hey();
+</script>
+</body>
+</html>

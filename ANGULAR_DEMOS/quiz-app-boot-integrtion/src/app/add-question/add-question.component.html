@@ -1,0 +1,9 @@
+<div class=container>
+<h3><u>Add question below</u></h3>
+<input class="form-control" type="text" [(ngModel)]="question.question" placeholder="Enter the question">
+<input class="form-control" type="text" [(ngModel)]="question.optionA" placeholder="Enter the optionA">
+<input class="form-control" type="text" [(ngModel)]="question.optionB" placeholder="Enter the OptionB">
+<input class="form-control" type="text" [(ngModel)]="question.optionC" placeholder="Enter the OptionC">
+<input class="form-control" type="text" [(ngModel)]="question.optionD" placeholder="Enter the OptionD">
+<button class="btn btn-primary" type="button" (click)="addQuestion()">Add question</button>
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<title>Git API AJAX Demo</title>
+</head>
+<body>
+    <h1> Git API</h1>
+<button class="btn btn-primary" type="button" onclick="getList()">Get List</button>
+<div class="container" id="results">
+<h1>List of Images</h1>
+</div>
+
+<script>
+    function getList(){
+    
+        let url='https://picsum.photos/v2/list';
+        let xhr=new XMLHttpRequest();
+        xhr.open('GET',url,true);
+        xhr.onload=function(){
+            if(this.readyState ==4 &&this.status===200){
+                let res=JSON.parse(this.responseText);
+                console.log(res);
+                let data="<table class='table table-bodered table-striped'>"
+                    data=data+"<thead class='thead-dark'><tr><th>ID</th><th>Authors</th><th>Image</th><tr></thead>"
+                        res.forEach(element => {
+                            data=data+"<tr><td>"+element.id+"</td>"
+                            data=data+"<td>"+element.author+"</td>"
+                            data=data+"<td>"+element.url+"</td></tr>"
+
+                       });
+                        data=data+"</table>";
+                        document.getElementById("results").innerHTML=data;
+            }
+        }
+        xhr.send();
+    }
+   
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+   
+    <div class="container" *ngFor="let cart of cartList">
+        
+    
+        <div class="card" style="width:400px">
+            <!-- <img class="card-img-top" [src]="cart.product.avatar" alt="Card image" style="height:150px;width: 150px;"> -->
+            <div class="card-body">
+                
+        <!-- {{console.log(cart.id)}}  -->
+              <h4 class="card-title">medicine id with {{cart.id}} is in cart</h4>
+               <div class="container" *ngFor="let product of cart.products">
+            
+              
+               <p class="card-text">{{product.price}}</p> 
+         </div> 
+
+        </div>
+
+        </div>
+        
+    </div>
+    

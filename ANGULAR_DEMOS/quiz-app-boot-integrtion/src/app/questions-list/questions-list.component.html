@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html> 
+    <body> 
+<div class="container">
+     <ol class="list-group" *ngFor="let question of questionsList;let i=index;" >
+    <li  class="list-group-item"> <strong>Question:</strong>
+       <strong> {{question.question}}</strong>
+    </li>
+
+    
+    <li class="list-group-item ">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="{{i}}exampleRadios"  id="exampleRadios1" value={{question.optionA}} (click)="setradio('optionA')">
+            <label class="form-check-label" for="exampleRadios1">
+                {{question.optionA}}
+            </label>
+         </div>
+       
+    </li>
+    <li  class="list-group-item" >
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="{{i}}exampleRadios" id="exampleRadios2" value={{question.optionB}} (click)="setradio('optionB')">
+            <!-- <label class="form-check-label" for="exampleRadios1" tabindex="0" (keyup.space)="radioSelected=question.optionB"> -->
+                {{question.optionB}}
+            <!-- </label> -->
+         </div>
+     
+    </li>
+    <li  class="list-group-item" >
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="{{i}}exampleRadios" id="exampleRadios3" value={{question.optionC}} (click)="setradio('optionC')">
+            <label class="form-check-label" for="exampleRadios1" tabindex="0" (keyup.space)="radioSelected=question.optionC">
+                {{question.optionC}}
+            </label>
+         </div> 
+        
+    </li>
+    <li   class="list-group-item" >
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="{{i}}exampleRadios" id="exampleRadios4" value={{question.optionD}} (click)="setradio('optionD')">
+            <label class="form-check-label" for="exampleRadios1" tabindex="0" (keyup.space)="radioSelected=question.optionD">
+                {{question.optionD}}
+            </label>
+         </div>
+    </li> 
+    <li>
+
+        <button type="button" (click)="isSelected('optionA',question.answer)"  class="btn btn-success">Submit the answer</button> 
+        <span>{{selectedAnswer}}</span>
+
+  <!-- <button type="button"  class="btn btn-success">Submit the answer</button> 
+
+ <div *ngIf="isSelected('optionA',question)">  
+    <span>{{selectedAnswer}}</span>
+   </div> 
+   <!- <ng-template #elseBlock>Content to render when condition is false.</ng-template>  -->
+
+
+   <!-- <div *ngIf="isSelected('optionB',question)">  
+    <span>{{selectedAnswer}}</span>
+  </div>   
+  <div *ngIf="isSelected('optionC',question)">  
+    <span>{{selectedAnswer}}</span>  
+ </div>   
+ <div *ngIf="isSelected('optionD',question)">  
+    <span>{{selectedAnswer}}</span>
+ </div>    -->
+</li>
+     </ol> 
+</div>
+
+</body>
+</html> 

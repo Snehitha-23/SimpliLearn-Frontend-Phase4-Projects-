@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>BootStrap 4 demo</title>
+</head>
+<body>
+    <h2>Hello BootStrap</h2>
+    <!-- container fixed width contaimer fluyid occupies full width -->
+    <!-- we can also use sm md lg xl -->
+<div class="container bg-info text-white p-3 mg-3">
+    <h3>Hello Container!!</h3>
+<p>Hey I am container with bg,text and eith marginn,padding.</p>
+
+</div><br/>
+<div class="container-md  bg-primary border">
+    <h3>Hello Container!!</h3>
+    <p>Hey I am container with size md and also a border.</p>
+    
+</div>
+<!-- can be 12 columns max based on that divide the ratio -->
+<div class="row">
+<div class="col-sm-2 bg-success">Column1</div>
+<div class="col-sm-5" style="background-color: burlywood;">Column2</div>
+<div class="col-sm-5" style="background-color: chartreuse;">Column3</div>
+</div>
+<p>The <abbr title="World Health Organisation">WHO</abbr></p>
+
+<div class="container">
+    <h1>Blockquotes</h1>
+    <p>The blockquote element is used to present content from another source:</p>
+    <blockquote class="blockquote">
+      <p>For<mark> 50 years,</mark> WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+      <footer class="blockquote-footer">From WWF's website</footer>
+    </blockquote>
+  </div>
+
+  <div class="container">
+    <h1>Display Headings</h1>
+    <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+    <h1 class="display-1">Display 1<small>display1</small></h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+  </div>
+  
+  <div class="container">
+    <h2>Typography</h2>
+    <p class="text-left">Left-aligned text.</p>
+    <p class="text-right">Right-aligned text.</p>      
+    <p class="text-center">Center-aligned text.</p>
+    <p class="text-justify">Justified text. Justified text. Justified text. Justified text. Justified text. Justified text.</p>     
+     <!--wrap no responsive nature  -->
+    <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+    <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p>      
+  </div>
+  
+  <h1>Multiple Code Lines</h1>
+<p>For multiple lines of code, use the pre element:</p>
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+</div>
+
+<a href="#" class="text-secondary">Secondary link.</a>
+
+<p class="bg-success text-white">This text indicates success.</p>
+
+<!-- table table-bordered table-striped table-hover  table-responsive table-borderless table-success -->
+<table class="table">
+<thead>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <tr>
+        <td>
+            snehitha
+        </td>
+    </tr>
+</thead>
+</table>
+<!-- rounded rounded-circle img-thumbnail(bordered) float-right float-left img-fluid(responsive) -->
+<img alt="hello jerry" src="" class="img-fluid"> 
+<!--  btn btn-danger(colours) btn-outline-dark btn-sm btn-block(full width button) 
+active disabled......all tehse are classes we can alos ue disabled as attribute except for <a>-->
+<!-- different ways of using buttons -->
+<!-- spinner-border spinner-border-sm  spinner-grow spinner-grow-sm -->
+<a href="#" class="btn btn-info" role="button">Link Button</a>
+<button type="button" class="btn btn-info">Button</button>
+<input type="button" class="btn btn-info" value="Input Button">
+
+<button class="btn btn-primary">
+    <!-- use spinner with span -->
+    <span class="spinner-border spinner-border-sm"></span>
+    Loading..
+  </button>
+<!-- btn-group btn-group-vertical btn-group-sm -->
+
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div>
+
+  <!-- dropdown-toggle dropdown-menu dropdown-item (mention data-toggle="dropdown")
+dropdown-toggle-split -->
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+         Sony
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
+  </div>
+  <!-- 
+Badges are used to add additional information to any content. Use the .badge class together with a contextual class (like .badge-secondary)
+ within <span> elements to create rectangular badge -->
+<!-- additinal info ex: inbox 2 messages-->
+<!-- badge badge-primary badge-pill -->
+<h1>Example heading <span class="badge badge-secondary">New</span></h1>
+
+<!-- progress(outer class) progress-bar(inner) progress-bar-animated  progress-bar-striped  -->
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:20%"></div>
+  </div>
+
+
+  <!-- pagination -->
+  <!-- page-item-active page-item-disabled pagination pagination-lg pagination justify-content-centre justify-content-end -->
+  <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Primary</a> </li>
+      <li class="page-item"><a class="page-link" href="#">1</a> </li>
+      <li class="page-item"><a class="page-link" href="#">2</a> </li>
+      <li class="page-item"><a class="page-link" href="#">Next</a> </li>
+    </ul>
+    <!-- breadcrumbs -->
+<!-- output: Photos/Summer 2017/Italy/Rome -->
+<ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Photos</a></li>
+        <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+        <li class="breadcrumb-item"><a href="#">Italy</a></li>
+        <li class="breadcrumb-item active">Rome</li>
+      </ul>
+
+      <!-- list -->
+      <!-- list-group-flush(to remove borders) list-group-horizontal list-group-item-warning list-group-item-action(for hover in gray colour) -->
+      <ul class="list-group">
+        <li class="list-group-item active">Active item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+      </ul>
+
+      <!-- card card-header card-footer card-body card-title card-link(adds blue color and hover effect) card-text(removes margin)
+    bg-secondary-->
+      <div class="card">
+          <div class="card-body" >
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some example text. Some example text.</p>
+            <a href="#" class="card-link">Card link</a>
+          </div>
+      </div>
+      <!-- card with image -->
+      <!-- card-img-top card-img-bottom  img can be out of body to occupy entire wodth
+    stretched-link(inside alink which makes whole card to be clickable and hoverable
+card-img-overlay(to write on the img here the img acts as background)
+card-columns(grid of cards vertically and its adjust size automatically as we add cards)
+card-deck(grid of equal height and width)..horizontaly adds
+card-group(with  o spaces no margins-->
+      <div class="card">
+<img alt="image" src="img_avatar1.png" class="card-img-top">
+<div class="card-body">
+<h2 class="card-title">JERRY</h2>
+<p class="card-text">Hii!! I am Jerry-The Mouse</p>
+<a href="#" class="btn btn-primary">Know more</a>
+</div>
+      </div>
+      <!-- dropdown dropdown-toggle data-toggle=dropdown dropdown-menu dropdown-item dropdown-divider dropdown-header
+    dropdown dropright dropdown dropleft dropdown-menu-right(to right akign the dropdown menu
+    dropup==arrowmarks upwards
+    dropdown-item-text(plain text)) -->
+
+
+    <!-- nav nav-item nav-link  justify-content-centre justify-content-centre-end  flex-column(vertical) nav nav-tabs nav-link active
+    nav-pills nav-justified(of equal width)  -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+      </ul>
+    
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-light">
+
+    <!-- Remove the .navbar-expand-xl|lg|md|sm class to create a vertical navigation bar -->
+    <!-- navbar-brand(to highlight) -->
+
+    <!-- Use any of the .bg-color classes to add a background color to the navbar.
+Tip: Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light class to add a black text color. -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
+<!-- fixed-top fixed-bottom sticky-top -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+  </nav>
+<!-- for checkbox -->
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <!-- All textual <input>, <textarea>, and <select> elements with class .form-control have a width of 100%. -->
+  <!-- <form class="form-inline">In an inline form, all of the elements are inline and left-aligned.
+Add a wrapper element with .form-group, around each form control, to ensure proper margins form-group (<input class="form-control>") -->
+
+<!-- default there will no enouogh spacing to make it much better use spacing utilities(class=",mr-sm-2") 
+we can also avoid this and can use class="col" but remember to surround with a class="row".
+If you want less grid margins replace row with form-row -->
+<form action="/action_page.php">
+    <div class="form-group">
+      <label for="email" class="mr-sm-2">Email address:</label>
+      <input type="email" class="form-control" placeholder="Enter email" id="email">
+    </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox"> Remember me
+        </label>
+      </div>
+    </form>
+    <!--  Add either .was-validated or .needs-validation to the <form> element, depending on whether you want to provide validation feedback before or after submitting the form.
+         The input fields will have a green (valid) or
+         red (invalid) border to indicate what's missing in the form.
+          You can also add a .valid-feedback or .invalid-feedback message to tell the user explicitly what's missing, or needs to be done before submitting the form.
+        mention the one which is required. -->
+          <form action="/action_page.php" class="was-validated">
+            <div class="form-group">
+              <label for="uname">Username:</label>
+              <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            </form>
+            <!-- text area -->
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+              <!-- checkbox -->
+              <!-- we can also make it  disable by using disabled
+                We can also use form-check-inline in form tag
+        write option2 within the label-->
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Option 2
+                </label>
+              </div>
+              <!-- Radio buttons are used if you want to limit the user to just one selection from a list of preset options.
+            for  checkbox we use value(multiple select) and for radio we use name(single select) -->
+             <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio">Option 1
+                </label>
+              </div>
+              <!--for user to select one from multiple options it wrks lika a dropdown(select)
+            .form-control-sm
+        .form-control-plaintext  -->
+              <div class="form-group">
+                <label for="sel1">Select list:</label>
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+<!-- range and file upload -->
+              <input type="range" class="form-control-range">
+<input type="file" class="form-control-file border">
+<!-- 
+              To create a custom checkbox, wrap a container element, like <div>, with a class of .custom-control and .custom-checkbox around the checkbox. Then add the .custom-control-input to the input with type="checkbox".
+                Tip: If you use label 
+            -->
+                <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                      <label class="custom-control-label" for="customCheck">Check this custom checkbox</label>
+                    </div>
+                  </form>
+                  <!-- for a toggle switch same as custom checbox the only chnage is
+                in div element instead of custom-control custom-check chnage it to custom-control custom-switch -->
+                <!-- same for radio -->
+                <!-- <div class="custom-control custom-radio custom-control-inline"> -->
+
+                    <!-- select menu  -->
+                    <form>
+                        <select name="cars" class="custom-select">
+                          <option selected>Custom Select Menu</option>
+                          <option value="volvo">Volvo</option>
+                          <option value="fiat">Fiat</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                      </form>
+<!-- custom range -->
+                      <form>
+                        <label for="customRange">Custom range</label>
+                        <input type="range" class="custom-range" id="customRange" name="points1">
+                      </form>
+                      <!-- file upload -->
+                      <form>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                      </form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

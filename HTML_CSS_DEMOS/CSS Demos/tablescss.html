@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tables Demo</title>
+    <style>
+        table{
+            border-collapse:collapse;
+            width:100%;
+        }
+       /* table,th,td{
+            border:2px black;
+        }*/
+        th{
+            height: 50px;
+            text-align: left;
+            background-color: crimson;
+        }
+        td{
+            height: 50px;
+            vertical-align: bottom;
+        }
+        th,td{
+            padding: 15px;
+            border-bottom-style: solid black;
+        }
+        tr:hover{
+            background-color: blueviolet;
+        }
+        tr:nth-child(even){
+background-color: cadetblue;
+        }
+        div{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <table>
+        <!-- <tr>
+            <th>FirstName</th>
+            <th>LastNmae</th>
+            <th>Age</th>
+            <th>Place</th>
+            <th colspan="2">Contact number</th>
+        </tr>
+<tr>
+    <td>Snehitha</td>
+    <td> Katakam</td>  
+    <td>23</td>
+    <td>Wanparthy</td>
+    <td>9509876543</td>
+    <td>1234567890</td>
+</tr>
+<tr>
+    <td>Snehith</td>
+    <td> Katakam</td>  
+    <td>29</td>
+    <td>hyd</td>
+    <td>9509076543</td>
+    <td>9234567890</td>
+</tr>
+    </table> -->
+    <tr>
+        <th>FirstName</th>
+        <td>Snehitha</td>
+            <td>Snehith</td>
+    </tr>
+
+
+
+<tr>
+    <th>LastName</th>
+<td> Katakam</td>  
+<td> Katakam</td> 
+</tr>
+
+
+<tr>
+    <th>Age</th>
+    <td>23</td>
+    <td>24</td>
+</tr>
+
+
+    <tr>
+        <th>Place</th>
+        <td>Wanparthy</td>
+        <td>MBNR</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
+            <td>555 77 855</td>
+          
+        </tr>
+       
+
+
+
+</table>
+</div>
+</body>
+</html>

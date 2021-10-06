@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varibles demo</title>
+</head>
+<body>
+    <h3>Check out the console for output</h3>
+    <dl>
+        <dt>Var</dt>
+        <dd>- is global scope,menaing you can acccess that value not only in that js but all other js files if we declare var external way</dd>
+    <dt>let</dt>
+    <dd>-let is a local scope visibility will be within the current js file itself</dd>
+<dt>const from ESS</dt>
+<dd>cannot modify value</dd>
+
+</dl>
+<h3>JS Data Types</h3>
+<h2>JS provides 6 primitive data types and one complex type which is object and other types like array,function,regex</h2>
+<ol>
+    <li>null</li>
+    <li>undefined</li>
+    <li>number</li>
+    <li>string</li>
+    <li>boolean</li>
+    <li>symbol-added from ES6</li>
+</ol>
+    <script>
+        
+        // we can declare any variable using var
+        // and from ESS file we got jet and const as well to provide more visibility to the
+        var x=100;
+        console.log("x="+x);
+var y="hello", z='world'
+console.log(y+" "+z);
+
+
+function testVar(){
+    var m=100;
+    for(var i=1;i<10;i++){
+        console.log(i+m);
+    }
+    console.log("m="+m);
+    console.log("i="+i);
+    console.log("x="+x);
+}
+// console.log("m="+m); not accessible
+//     console.log("i="+i); not accessible
+testVar();
+
+function testLet(){
+    console.log("Testing Let")
+    let m=100;
+    for(let i=1;i<10;i++){
+        console.log(i+m);
+    }
+    console.log("m="+m);
+   // console.log("i="+i); not accessible
+    console.log("x="+x);
+}
+
+function testConst(){
+    console.log("Const")
+    const m=100;
+    for(let i=1;i<10;i++){
+        console.log(i+m);
+        const c=1000;
+        //c++; not accessible
+    }
+    console.log("m="+m);
+  //  console.log("i="+i); not accessible
+    console.log("x="+x);
+ //   console.log("c="+c);not accessible
+}
+testLet();
+testConst();
+x='reassigned to String';
+console.log("x="+x);
+x=false;
+console.log("x="+x);
+function testDataTypes(){
+    let i=100;
+    console.log("i = "+i+"type of i is"+(typeof(i)));
+    let r;
+    console.log("r = "+r+"type of r is"+(typeof(r)));
+    let u=null;
+    console.log("u = "+u+"type of u is"+(typeof(u)));
+    let obj={}
+    console.log("obj = "+obj+"type of obj is"+(typeof(obj)));
+let person={
+    fname:"Ravi",
+    lname:"Kumar"
+}
+console.log("person = "+person.fname+" "+person.lname+"type of person is "+ (typeof(person)));
+let ar=[10,20,30];
+console.log("ar= "+ar+"type of ar is"+(typeof(ar)));
+}
+testDataTypes();
+    </script>
+</body>
+</html>
